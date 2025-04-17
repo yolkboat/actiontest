@@ -3,7 +3,9 @@ name: Label New Issues
 on:
   issues:
     types: [opened]
-
+  
+permissions:
+  issues: write
 jobs:
   add-label:
     runs-on: ubuntu-latest
